@@ -1,6 +1,21 @@
-# BarcodeGenerator version 1.0.0
+# BarcodeGenerator
 
-Generate UPCE,UPCA,EAN13,EAN8,CODABAR
+### Overview ###
+This library was designed to generate barcode images from a string of data.
+
+|   Supported   | 
+| :------------- |
+| EAN-8       | 
+| EAN-13        |
+| UPC-A         |
+| UPC-E           | 
+| Codabar          |
+
+### Example ###
+```
+BarcodeGenerator.Barcode barcode = new BarcodeGenerator.Barcode("978020137962",BarcodeGenerator.SymbologyType.EAN13);
+Image img = barcode.DrawBarcode();
+```
 
 ## Screenshot
 
