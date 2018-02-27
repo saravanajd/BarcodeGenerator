@@ -13,8 +13,9 @@ This library was designed to generate barcode images from a string of data.
 
 ### Example ###
 ```
-BarcodeGenerator.Barcode barcode = new BarcodeGenerator.Barcode("978020137962",BarcodeGenerator.SymbologyType.EAN13);
-Image img = barcode.DrawBarcode();
+BarcodeGenerator.Barcode barcode = new BarcodeGenerator.Barcode("978020137962",
+                                                BarcodeGenerator.SymbologyType.EAN13);
+Image imgBarcode = barcode.DrawBarcode();
 ```
 
 ## Screenshot
