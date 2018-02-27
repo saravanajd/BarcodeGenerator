@@ -1,5 +1,7 @@
 # Barcode Generator
 
+[Download DLL](https://drive.google.com/file/d/10n4ze8hVdTAEJT8SGNon6wJw71LlowAF/view?usp=sharing)
+
 ### Overview ###
 This library was designed to generate barcode images from a string of data.
 
