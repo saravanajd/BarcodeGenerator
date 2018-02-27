@@ -1,4 +1,4 @@
-# BarcodeGenerator
+# Barcode Generator
 
 ### Overview ###
 This library was designed to generate barcode images from a string of data.
