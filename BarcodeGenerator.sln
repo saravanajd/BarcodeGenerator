@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeGenerator", "BarcodeGenerator\BarcodeGenerator.csproj", "{FF1374F1-7096-4E26-90AE-1C5BDA09C6DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm Test", "WinForm Test\WinForm Test.csproj", "{12DE5DC1-BED2-4A26-B8A9-201257718886}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF1374F1-7096-4E26-90AE-1C5BDA09C6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1374F1-7096-4E26-90AE-1C5BDA09C6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1374F1-7096-4E26-90AE-1C5BDA09C6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1374F1-7096-4E26-90AE-1C5BDA09C6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12DE5DC1-BED2-4A26-B8A9-201257718886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12DE5DC1-BED2-4A26-B8A9-201257718886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12DE5DC1-BED2-4A26-B8A9-201257718886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12DE5DC1-BED2-4A26-B8A9-201257718886}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
