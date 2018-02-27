@@ -44,6 +44,7 @@
             this.txtBarcode = new System.Windows.Forms.TextBox();
             this.pbBarcode = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBarcode)).BeginInit();
@@ -101,7 +102,7 @@
             // cbIncludeDimentions
             // 
             this.cbIncludeDimentions.AutoSize = true;
-            this.cbIncludeDimentions.Location = new System.Drawing.Point(17, 152);
+            this.cbIncludeDimentions.Location = new System.Drawing.Point(17, 138);
             this.cbIncludeDimentions.Name = "cbIncludeDimentions";
             this.cbIncludeDimentions.Size = new System.Drawing.Size(106, 18);
             this.cbIncludeDimentions.TabIndex = 23;
@@ -111,7 +112,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(119, 125);
+            this.label5.Location = new System.Drawing.Point(119, 111);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(14, 14);
             this.label5.TabIndex = 22;
@@ -120,7 +121,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(137, 98);
+            this.label4.Location = new System.Drawing.Point(137, 84);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 14);
             this.label4.TabIndex = 21;
@@ -128,7 +129,7 @@
             // 
             // txtHeight
             // 
-            this.txtHeight.Location = new System.Drawing.Point(140, 119);
+            this.txtHeight.Location = new System.Drawing.Point(140, 105);
             this.txtHeight.Margin = new System.Windows.Forms.Padding(8);
             this.txtHeight.Multiline = true;
             this.txtHeight.Name = "txtHeight";
@@ -138,7 +139,7 @@
             // 
             // txtWidth
             // 
-            this.txtWidth.Location = new System.Drawing.Point(17, 119);
+            this.txtWidth.Location = new System.Drawing.Point(17, 105);
             this.txtWidth.Margin = new System.Windows.Forms.Padding(8);
             this.txtWidth.Multiline = true;
             this.txtWidth.Name = "txtWidth";
@@ -149,7 +150,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 98);
+            this.label3.Location = new System.Drawing.Point(18, 84);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 14);
             this.label3.TabIndex = 18;
@@ -158,7 +159,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 48);
+            this.label2.Location = new System.Drawing.Point(18, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 14);
             this.label2.TabIndex = 17;
@@ -167,7 +168,7 @@
             // cmbBarcodeType
             // 
             this.cmbBarcodeType.FormattingEnabled = true;
-            this.cmbBarcodeType.Location = new System.Drawing.Point(17, 69);
+            this.cmbBarcodeType.Location = new System.Drawing.Point(17, 55);
             this.cmbBarcodeType.Margin = new System.Windows.Forms.Padding(8);
             this.cmbBarcodeType.Name = "cmbBarcodeType";
             this.cmbBarcodeType.Size = new System.Drawing.Size(227, 22);
@@ -176,7 +177,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 181);
+            this.label1.Location = new System.Drawing.Point(14, 167);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 14);
             this.label1.TabIndex = 14;
@@ -184,7 +185,7 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(17, 244);
+            this.btnCreate.Location = new System.Drawing.Point(17, 230);
             this.btnCreate.Margin = new System.Windows.Forms.Padding(8);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(111, 28);
@@ -195,7 +196,7 @@
             // 
             // txtBarcode
             // 
-            this.txtBarcode.Location = new System.Drawing.Point(17, 202);
+            this.txtBarcode.Location = new System.Drawing.Point(17, 188);
             this.txtBarcode.Margin = new System.Windows.Forms.Padding(8);
             this.txtBarcode.Multiline = true;
             this.txtBarcode.Name = "txtBarcode";
@@ -220,12 +221,26 @@
             this.label6.TabIndex = 25;
             this.label6.Text = "version 1.0.0";
             // 
+            // lblHeader
+            // 
+            this.lblHeader.BackColor = System.Drawing.Color.Black;
+            this.lblHeader.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
+            this.lblHeader.Location = new System.Drawing.Point(0, 0);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Padding = new System.Windows.Forms.Padding(8);
+            this.lblHeader.Size = new System.Drawing.Size(170, 37);
+            this.lblHeader.TabIndex = 26;
+            this.lblHeader.Text = "Barcode Generator";
+            this.lblHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblHeader_MouseDown);
+            // 
             // frmBarcodeGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(723, 388);
+            this.Controls.Add(this.lblHeader);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pbBarcode);
             this.Controls.Add(this.groupBox1);
@@ -262,5 +277,6 @@
         private System.Windows.Forms.TextBox txtBarcode;
         private System.Windows.Forms.PictureBox pbBarcode;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblHeader;
     }
 }

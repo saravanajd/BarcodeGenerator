@@ -43,7 +43,7 @@ namespace WinForm_Test
         {
             try
             {
-                Barcode barcode = new Barcode();
+                Barcode barcode = new Barcode("978020137962",SymbologyType.EAN13);
                 barcode.Data = txtBarcode.Text.Trim();
                 if (cbIncludeDimentions.Checked)
                 {
@@ -57,6 +57,15 @@ namespace WinForm_Test
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "BarcodeGenerator", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void lblHeader_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
     }
